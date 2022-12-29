@@ -68,6 +68,10 @@ class _ListCatatanState extends State<ListCatatanPage> {
                   padding: const EdgeInsets.all(8),
                   itemCount: catatans.length,
                   itemBuilder: (BuildContext context, int index) {
+                    // CEK KONDISI JIKA HARI INI LEWAT INTERVAL PENGINGAT, MAKA TAMPILKAN ALERT
+                    // SAYA KONVERSI DATE NOW KE millisecondsSinceEpoch
+                    // SAYA KONVERSI waktu_pengingat KE millisecondsSinceEpoch (cek di page add)
+                    // SAYA KONVERSI interval_pengingat KE millisecond (cek di page add)
                     print("now ${now}");
                     print("nowAngkat ${nowAngkat}");
                     print(
